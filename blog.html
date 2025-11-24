@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог та Новини - Gadget.</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="bi bi-list"></label>
+        <a href="index.html" class="logo">Gadget<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про нас</a>
+            <a href="products.html">Товари</a>
+            <a href="review.html">Відгуки</a>
+            <a href="contact.html">Контакти</a>
+            <a href="blog.html">Блог</a>
+            <a href="gift-cards.html">Сертифікати</a>
+            <a href="gifts.html">Подарунки</a>
+        </nav>
+
+        <div class="icons">
+            <a href="favorites.html" aria-label="Обрані товари">
+                <i class="bi bi-suit-heart-fill"></i>
+            </a>
+
+            <a href="orders.html" aria-label="Мої замовлення">
+                <i class="bi bi-cart-check"></i>
+            </a>
+
+            <a href="profile.html" aria-label="Профіль користувача">
+                <i class="bi bi-person-circle"></i>
+            </a>
+        </div>
+        
+    </header>
+
+    <section class="blog" id="blog">
+    <h1 class="heading">Наш <span>блог</span> та новини</h1>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/Огляд нового iPhone.jpg" alt="Огляд нового iPhone 17">
+            </div>
+            <div class="content">
+                <div class="post-info">
+                    <i class="bi bi-calendar"></i> 20 листопада, 2025</a>
+                    <i class="bi bi-person"></i> Адмін</a>
+                </div>
+                <h3>Огляд: iPhone 17 – Революція чи Еволюція?</h3>
+                <p>Детальний погляд на нові функції камери та процесора останнього флагмана від Apple. Чи варто оновлюватись?</p>
+                
+                <a href="#" class="btn" onclick="toggleReadMore('post-1-text', this)">Читати далі</a>
+                <p class="full-text" id="post-1-text">
+                    Новий чіп A18 Pro демонструє вражаючі показники в тестах продуктивності, особливо в обробці штучного інтелекту. Камера отримала збільшену світлочутливість, що значно покращує нічну зйомку. Дизайн залишається класичним, але з більш стійким титановим корпусом. Наш вердикт: це гідний апгрейд для власників старих моделей.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/dlya-igrovogo-noutbuka.jpg" alt="Поради щодо вибору ноутбука">
+            </div>
+            <div class="content">
+                <div class="post-info">
+                    <i class="bi bi-calendar"></i> 15 листопада, 2025</a>
+                    <i class="bi bi-person"></i> Корисно</a>
+                </div>
+                <h3>Топ-5 помилок при виборі ігрового ноутбука у 2025 році</h3>
+                <p>Уникайте цих пасток! Поради від наших експертів, які допоможуть заощадити гроші та отримати максимальну продуктивність.</p>
+                
+                <a href="#" class="btn" onclick="toggleReadMore('post-2-text', this)">Читати далі</a>
+                <p class="full-text" id="post-2-text">
+                    Найпоширеніша помилка — економія на системі охолодження. Потужний процесор і відеокарта не зможуть працювати на повну, якщо ноутбук перегрівається. Також не забувайте про якість дисплея: висока частота оновлення (120 Гц+) важлива не менше, ніж роздільна здатність.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/Samsung.jpg" alt="Новинка від Samsung">
+            </div>
+            <div class="content">
+                <div class="post-info">
+                    <i class="bi bi-calendar"></i> 10 листопада, 2025</a>
+                    <i class="bi bi-person"></i> Новинки</a>
+                </div>
+                <h3>Анонс: Samsung Galaxy Watch 8 – що нового?</h3>
+                <p>Всі чутки та офіційна інформація про наступне покоління розумних годинників: дизайн, батарея та ОС.</p>
+                
+                <a href="#" class="btn" onclick="toggleReadMore('post-3-text', this)">Читати далі</a>
+                <p class="full-text" id="post-3-text">
+                    Годинник отримав сенсор для вимірювання рівня цукру в крові (неінвазивний метод), що стало найбільшим проривом. Також значно покращено автономність завдяки новій енергоефективній батареї та оптимізації Wear OS. Очікується преміум-версія з титану.
+                </p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="image">
+                <img src="images/66.jpg" alt="Батарея та зарядка">
+            </div>
+            <div class="content">
+                <div class="post-info">
+                    <i class="bi bi-calendar"></i> 05 листопада, 2025</a>
+                    <i class="bi bi-person"></i> Поради</a>
+                </div>
+                <h3>Як продовжити життя батареї вашого смартфона: 3 головні правила</h3>
+                <p>Прості кроки, які допоможуть зберегти ємність акумулятора на довгі роки та уникнути швидкої деградації.</p>
+                
+                <a href="#" class="btn" onclick="toggleReadMore('post-4-text', this)">Читати далі</a>
+                <p class="full-text" id="post-4-text">
+                    Не розряджайте телефон "в нуль" і не заряджайте до 100% без необхідності (оптимально тримати заряд між 20% і 80%). Використовуйте оригінальні зарядні пристрої або сертифіковані аналоги, щоб уникнути стрибків напруги. Уникайте перегріву під час заряджання.
+                </p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="image">
+                <img src="images/oglyad-navushnikiv.jpg" alt="Огляд навушників">
+            </div>
+            <div class="content">
+                <div class="post-info">
+                    <i class="bi bi-calendar"></i> 28 жовтня, 2025</a>
+                    <i class="bi bi-person"></i> Огляди</a>
+                </div>
+                <h3>Бездротові навушники X-Sound Pro: Чи справді вони "Pro"?</h3>
+                <p>Незалежний тест шумозаглушення та якості звуку нової моделі, яка претендує на лідерство у преміум-сегменті.</p>
+                
+                <a href="#" class="btn" onclick="toggleReadMore('post-5-text', this)">Читати далі</a>
+                <p class="full-text" id="post-5-text">
+                    Модель X-Sound Pro має відмінну пасивну ізоляцію, а активне шумозаглушення ефективно відсікає низькі частоти (шум транспорту). Якість звуку вражає: чистий бас і деталізовані високі частоти. Єдиний мінус — висока ціна, але вона виправдана якістю.
+                </p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="image">
+                <img src="images/47151.jpg" alt="Новий процесор">
+            </div>
+            <div class="content">
+                <div class="post-info">
+                    <i class="bi bi-calendar"></i> 20 жовтня, 2025</a>
+                    <i class="bi bi-person"></i> Технології</a>
+                </div>
+                <h3>Майбутнє настільних ПК: Чіпи QuantumCore і DDR6 пам'ять</h3>
+                <p>Погляд на наступне покоління компонентів, які зроблять наші комп'ютери швидшими та енергоефективнішими.</p>
+                
+                <a href="#" class="btn" onclick="toggleReadMore('post-6-text', this)">Читати далі</a>
+                <p class="full-text" id="post-6-text">
+                    Очікується, що нові процесори QuantumCore від Intel/AMD будуть використовувати гібридну архітектуру з інтегрованими блоками для прискорення ШІ. Перехід на стандарт DDR6 забезпечить подвоєну пропускну здатність пам'яті, що критично для ігор та професійної графіки.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    function toggleReadMore(contentId, buttonElement) {
+        event.preventDefault(); 
+        
+       
+        const content = document.getElementById(contentId);
+        
+        
+        content.classList.toggle('active');
+        
+       
+        if (content.classList.contains('active')) {
+            buttonElement.textContent = 'Згорнути';
+        } else {
+            buttonElement.textContent = 'Читати далі';
+        }
+    }
+</script>
+
+    <footer class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Меню</h3>
+                <a href="index.html">Головна</a>
+                <a href="about.html">Про нас</a>
+                <a href="products.html">Товари</a>
+                <a href="review.html">Відгуки</a>
+                <a href="contact.html">Контакти</a>
+                <a href="blog.html">Блог</a>
+                <a href="gift-cards.html">Сертифікати</a>
+                <a href="gifts.html">Подарунки</a>
+                <a href="favorites.html">Обрані</a>
+                <a href="orders.html">Мої замовлення</a>
+                <a href="profile.html">Профіль</a>
+            </div>
+
+            <div class="box">
+                <h3>Локації</h3>
+                <a href="https://maps.app.goo.gl/YAG8SKtRGTzrcd8UA">Київ</a>
+                <a href="https://maps.app.goo.gl/iuLcZD8gRdy6jbjQA">Луцьк</a>
+                <a href="https://maps.app.goo.gl/p9RNUqVdBhU7RqCY9">Рівне</a>
+                <a href="https://maps.app.goo.gl/SPWUvTQS3pMG1Y8U8">Львів</a>
+                <a href="https://maps.app.goo.gl/6tvxsU9bKCZWFKe8A">Вінниця</a>
+            </div>
+
+            <div class="box">
+                <h3>Контакти</h3>
+                <a href="tel:+1234567890">+1 234 567 890</a>
+                <a href="mailto:example@gmail.com">example@gmail.com</a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

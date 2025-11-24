@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої Замовлення - Gadget.</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="bi bi-list"></label>
+        <a href="index.html" class="logo">Gadget<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про нас</a>
+            <a href="products.html">Товари</a>
+            <a href="review.html">Відгуки</a>
+            <a href="contact.html">Контакти</a>
+            <a href="blog.html">Блог</a>
+            <a href="gift-cards.html">Сертифікати</a>
+            <a href="gifts.html">Подарунки</a>
+        </nav>
+
+        <div class="icons">
+            <a href="favorites.html" aria-label="Обрані товари">
+                <i class="bi bi-suit-heart-fill"></i>
+            </a>
+
+            <a href="orders.html" aria-label="Мої замовлення">
+                <i class="bi bi-cart-check"></i>
+            </a>
+
+            <a href="profile.html" aria-label="Профіль користувача">
+                <i class="bi bi-person-circle"></i>
+            </a>
+        </div>
+
+    </header>
+
+    <section class="orders" id="orders">
+        <h1 class="heading">Мої <span>Замовлення</span></h1>
+        <div class="orders-container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>№ Замовлення</th>
+                        <th>Дата</th>
+                        <th>Статус</th>
+                        <th>Сума</th>
+                        <th>Деталі</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="№ Замовлення">#100234</td>
+                        <td data-label="Дата">21.11.2025</td>
+                        <td data-label="Статус" class="status-processing">В обробці</td>
+                        <td data-label="Сума">65 999 грн</td>
+                        <td data-label="Деталі"><a href="#" class="details-btn">Переглянути</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="№ Замовлення">#100233</td>
+                        <td data-label="Дата">19.11.2025</td>
+                        <td data-label="Статус" class="status-cancelled">Скасовано</td>
+                        <td data-label="Сума">4 100 грн</td>
+                        <td data-label="Деталі"><a href="#" class="details-btn">Переглянути</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="№ Замовлення">#100231</td>
+                        <td data-label="Дата">22.10.2025</td>
+                        <td data-label="Статус" class="status-delivered">Доставлено</td>
+                        <td data-label="Сума">9 500 грн</td>
+                        <td data-label="Деталі"><a href="#" class="details-btn">Переглянути</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="№ Замовлення">#100230</td>
+                        <td data-label="Дата">15.10.2025</td>
+                        <td data-label="Статус" class="status-processing">В обробці</td>
+                        <td data-label="Сума">12 499 грн</td>
+                        <td data-label="Деталі"><a href="#" class="details-btn">Переглянути</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="№ Замовлення">#100227</td>
+                        <td data-label="Дата">05.10.2025</td>
+                        <td data-label="Статус" class="status-delivered">Доставлено</td>
+                        <td data-label="Сума">1 850 грн</td>
+                        <td data-label="Деталі"><a href="#" class="details-btn">Переглянути</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="№ Замовлення">#100185</td>
+                        <td data-label="Дата">12.06.2025</td>
+                        <td data-label="Статус" class="status-delivered">Доставлено</td>
+                        <td data-label="Сума">35 000 грн</td>
+                        <td data-label="Деталі"><a href="#" class="details-btn">Переглянути</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="№ Замовлення">#100229</td>
+                        <td data-label="Дата">01.09.2025</td>
+                        <td data-label="Статус" class="status-cancelled">Скасовано</td>
+                        <td data-label="Сума">3 200 грн</td>
+                        <td data-label="Деталі"><a href="#" class="details-btn">Переглянути</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="no-orders-msg" style="display: none;">
+                <p>У вас поки що немає замовлень.</p>
+                <a href="products.html" class="btn">Перейти до товарів</a>
+            </div>
+
+        </div>
+    </section>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Меню</h3>
+                <a href="index.html">Головна</a>
+                <a href="about.html">Про нас</a>
+                <a href="products.html">Товари</a>
+                <a href="review.html">Відгуки</a>
+                <a href="contact.html">Контакти</a>
+                <a href="blog.html">Блог</a>
+                <a href="gift-cards.html">Сертифікати</a>
+                <a href="gifts.html">Подарунки</a>
+                <a href="favorites.html">Обрані</a>
+                <a href="orders.html">Мої замовлення</a>
+                <a href="profile.html">Профіль</a>
+            </div>
+
+            <div class="box">
+                <h3>Локації</h3>
+                <a href="https://maps.app.goo.gl/YAG8SKtRGTzrcd8UA">Київ</a>
+                <a href="https://maps.app.goo.gl/iuLcZD8gRdy6jbjQA">Луцьк</a>
+                <a href="https://maps.app.goo.gl/p9RNUqVdBhU7RqCY9">Рівне</a>
+                <a href="https://maps.app.goo.gl/SPWUvTQS3pMG1Y8U8">Львів</a>
+                <a href="https://maps.app.goo.gl/6tvxsU9bKCZWFKe8A">Вінниця</a>
+            </div>
+
+            <div class="box">
+                <h3>Контакти</h3>
+                <a href="tel:+1234567890">+1 234 567 890</a>
+                <a href="mailto:example@gmail.com">example@gmail.com</a>
+            </div>
+
+        </div>
+    </footer>
+        
+</body>
+
+</html>
