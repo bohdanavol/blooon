@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  outline: none;
   border: none;
   text-decoration: none;
   text-transform: none;
-  transition: 0.2s linear;
 }
 
 html {
@@ -477,7 +475,7 @@ header .bi.bi-list {
 }
 .footer .box-container .box a {
   display: block;
-  color: rgba(178, 216, 255, 0.782);
+  color: rgba(31, 118, 206, 0.782);
   font-size: 1.5rem;
   padding: 1rem 0;
 }
@@ -577,11 +575,38 @@ header .bi.bi-list {
 }
 
 .fav {
-  background: #222;
+    background: #222;
 }
+
 .fav:hover {
-  background: #000;
-  transform: translateY(-3px);
+    background: #000;
+    transform: translateY(-3);
+}
+
+.char-box {
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 1.6rem;
+
+    background: linear-gradient(135deg, #e6f0ff, #f3f7ff);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.char-box h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #003d99;
+    margin-bottom: 1.5rem;
+}
+
+#cart-added:checked ~ #cart-msg {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#fav-added:checked ~ #fav-msg {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .char-box {

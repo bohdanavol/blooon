@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  outline: none;
   border: none;
   text-decoration: none;
   text-transform: none;
-  transition: 0.2s linear;
 }
 
 html {
