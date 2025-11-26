@@ -225,7 +225,7 @@ header .bi.bi-list {
 }
 .about .row .content p {
   font-size: 1.5rem;
-  color: #fff;
+  color: black;
   padding: 0.5rem 0;
   padding-top: 1rem;
   line-height: 1.5;
@@ -237,6 +237,7 @@ header .bi.bi-list {
   flex-wrap: wrap;
   gap: 1.5rem;
   padding: 5rem 0;
+  margin-top: 3%;
 }
 .icons-container .icons {
   background: #fff;
